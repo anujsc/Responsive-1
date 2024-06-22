@@ -22,5 +22,9 @@
     .text{
         display: none;
     }
+
+    .henji{
+        display: none;
+    }
     
 }

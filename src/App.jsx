@@ -5,6 +5,8 @@ import './App.css'
 import Home from './component/Home'
 import Nav from './component/Nav'
 import Cards from './component/Cards'
+import Addurown from './component/Addurown'
+import Test from './component/Test'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
     <Nav/>
      <Home/>
      <Cards/>
+     <Addurown/>
+     <Test/>
     </>
   )
 }

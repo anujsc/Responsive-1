@@ -69,18 +69,18 @@ function Cards() {
         P2:"Attend"}
     ]
   return (
-    <div className="w-[360px] h-[720px] top-[800px] absolute">
+    <div className=" w-[360px] h-[720px] top-[800px] absolute lg:w-[1440px] lg:h-[818px]  ">
       
       {data.map((item)=>(
-        <div className="flex justify-center mt-4">
-        <div className="w-[312px] flex flex-col gap-3 items-center h-[216px] border-2 border-[#CED4DA] rounded-lg">
-          <div className="mt-[2.5vh] flex justify-center gap-2">
+        <div className="lg:hidden mt-4 flex justify-center ">
+        <div className="w-[312px] flex flex-col justify-center gap-3 items-center  h-[216px] border-2 border-[#CED4DA] rounded-lg lg:w-[608px] lg:h-[297px]">
+          <div className="mt-[2.5vh] flex justify-center gap-2 ">
             <div  className=" h-[28px] w-[32px]">{item.svg}</div>
             <h1 className=" w-[62px] h-[27px] text-[18px] font-semibold leading-[27px]">{item.h1}</h1>
           </div>
 
           <div>
-            <p className=" text-center w-[264px] h-[80px] font-light tracking-wide text-[12px] leading-[20px] ">{item.p1}</p>
+            <p className=" text-center w-[264px] h-[80px] font-light tracking-wide text-[12px] leading-[20px] lg:text-start lg:w-[520px] lg:h-[81px] ">{item.p1}</p>
           </div>
 
           <div className=" mt-1 flex justify-center items-center w-[264px] h-[32px] rounded-lg border-[2px] border-[#8064A2]">
@@ -90,6 +90,29 @@ function Cards() {
       </div>
 
       ))}
+
+      <div className="henji w-[1240px] h-[618px] top-[100px] left-[100px] absolute flex flex-wrap gap-6  ">
+          {data.map((item)=>(
+                   <div className=" w-[608px] h-[297px] border-2 border-[#CED4DA] rounded-lg  ">
+                   <div className="ml-[5vh] mt-[5.3vh] flex justify-start gap-2 ">
+                     <div  className=" h-[40px] w-[40px]">{item.svg}</div>
+                     <h1 className=" w-[83px] h-[36px] text-[24px] font-semibold leading-[27px]">{item.h1}</h1>
+                   </div>
+                   <div>
+                     <p className="ml-[5vh] mt-[2.5vh] w-[520px] h-[81px] font-light tracking-wide text-[18px] leading-[27px]  ">{item.p1}</p>
+                   </div>
+                   <div className="ml-[5vh] mt-[3vh] flex justify-center items-center w-[122px] h-[40px] rounded-lg border-[2px] border-[#8064A2]">
+                         <p className="w-[61px] h-[16px] text-[#8064A2] tracking-wide font-semibold text-[14px] leading-[16px] ">{item.P2}</p>
+                   </div>
+         
+         
+                   </div>
+          ))}
+                    
+      </div>
+
+
+
     </div>
     
   );
