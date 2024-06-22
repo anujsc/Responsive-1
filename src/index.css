@@ -18,5 +18,9 @@
     .search{
         display: none;
     }
+
+    .text{
+        display: none;
+    }
     
 }
