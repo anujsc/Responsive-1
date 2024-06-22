@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Poppins-Regular";
+}
+
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('/src/assets/font/Poppins-Regular.ttf')
+
+  }
+
+@media (max-width:600px) {
+
+    .search{
+        display: none;
+    }
+    
+}
